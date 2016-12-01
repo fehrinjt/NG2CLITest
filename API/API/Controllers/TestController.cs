@@ -18,9 +18,9 @@ namespace API.Controllers
 
                 return Ok(testString);
             }
-            catch (Exception)
+            catch (Exception exc)
             {
-                return InternalServerError();
+                return InternalServerError(exc);
             }
         }
 
@@ -32,9 +32,9 @@ namespace API.Controllers
 
                 return Ok(testString);
             }
-            catch (Exception)
+            catch (Exception exc)
             {
-                return InternalServerError();
+                return InternalServerError(exc);
             }
         }
     }
