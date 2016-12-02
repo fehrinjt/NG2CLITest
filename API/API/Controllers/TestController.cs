@@ -12,16 +12,16 @@ namespace API.Controllers
     {
         public IHttpActionResult Get()
         {
-            /*try
-            {*/
+            try
+            {
                 var testString = "This is a test of the API";
 
                 return Ok(testString);
-            /*}
+            }
             catch (Exception exc)
             {
                 return InternalServerError(exc);
-            }*/
+            }
         }
 
         public IHttpActionResult Get(int id)
