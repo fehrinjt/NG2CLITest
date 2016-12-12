@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'lc-test',
@@ -10,6 +11,7 @@ export class TestComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(environment);
   }
 
 }
