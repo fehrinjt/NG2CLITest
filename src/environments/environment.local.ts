@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  outputPath: 'C:\test\deploy'
+  outputPath: 'C:\\test\\deploy'
 };

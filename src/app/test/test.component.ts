@@ -7,11 +7,10 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-
+  output: string = '';
   constructor() { }
 
   ngOnInit() {
-    console.log(environment);
+    this.output = environment.outputPath;
   }
-
 }
